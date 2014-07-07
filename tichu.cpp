@@ -1,10 +1,12 @@
-#include <iostream>
+// Author: Harry <harry@housy.ch>
+#include <stdio.h>
 #include "card.h"
-#include "shuffle.h"
+#include "./shuffle.h"
+card stack[52];
 
-void stack(card stack[52])
-{ 
-}
+//void stack(card stack[])
+//{ 
+//}
 int main()
 { 
 
@@ -216,8 +218,8 @@ int main()
   AssSchwarz.worth = 14;
   AssSchwarz.color = "Schwarz";
 
-  stack.cardonstack[52];
-/*  stack[0] = ZweiRot;
+//  card stack[52];
+  stack[0] = ZweiRot;
   stack[1] = ZweiBlau;
   stack[2] = ZweiGruen;
   stack[3] = ZweiSchwarz;
@@ -270,8 +272,8 @@ int main()
   stack[50] = AssGruen;
   stack[51] = AssSchwarz;
 
-  shuffle(stack);
+//  shuffle(stack); 
 
-  std::cout << stack[1].color << std::endl;
-  std::cout << stack[1].worth << std::endl;
-*/}
+  printf("message");
+//  printf(stack[1].worth);
+}

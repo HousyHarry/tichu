@@ -1,19 +1,8 @@
-#include <time.h>
-#include <stdlib.h>
-#include <algorithm> 
+// Copyright 2014, Harry
+// Author: Harry <harry@housy.ch>
+#ifndef TICHU_SHUFFLE_H
+#define TICHU_SHUFFLE_H
+// Shuffle cards from stack.
+card shuffle(card stack[]);
 
-void shuffle(card stack[])
-{
-    int random1, random2;
-    time_t t;
-
-    time(&t);
-
-  for (int i = 1; i < 1000; ++i) 
-  {
-    srand(t+i);
-    random1 = rand() % sizeof(stack);
-    random2 = rand() % sizeof(stack);
-    std::swap(stack[random1], stack[random1]);
-  }
-};
+#endif // TICHU_SHUFFLE_H 
